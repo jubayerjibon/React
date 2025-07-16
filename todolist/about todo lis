@@ -1,0 +1,12 @@
+*** Todo List App ***
+This is a simple and user-friendly Todo List application built with React. It allows users to add and remove tasks efficiently, making it easier to manage daily goals and improve productivity.
+
+🚀 Features
+📌 Add new tasks quickly using the input field
+❌ Remove tasks with a single click
+✨ Clean and minimal UI design
+💡 Built using React functional components and modern CSS
+
+🛠️ Tech Stack
+  * React
+  * CSS (Vanilla)
