@@ -1,0 +1,14 @@
+🔽 React Accordion Component
+This project is a simple and reusable Accordion UI component built with React. It displays a list of Python interview questions and answers in an expandable format, perfect for FAQs or knowledge bases.
+
+📌 Features
+Expand/collapse answers on click
+Smooth CSS transitions
+Clean, modern UI with minimal styling
+Data-driven: Questions and answers are loaded from a JSON array with unique IDs
+Easy to customize for other topics (e.g., JavaScript, React, etc.)
+
+🛠️ Tech Stack
+React
+CSS (Vanilla)
+JSON for data
