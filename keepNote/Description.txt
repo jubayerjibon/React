@@ -1,0 +1,11 @@
+📝 KeepNote – A Simple Note-Taking App
+KeepNote is a lightweight and intuitive note-taking web app inspired by Google Keep. It allows users to quickly jot down ideas, reminders, or to-dos in a clean, tile-based interface.
+
+🚀 Features
+✅ Create new notes with a title and body
+🗑️ Delete notes instantly with a single click
+🧱 Notes are displayed in a responsive, masonry-style grid layout
+🧠 Notes are initially stored in an array of objects for local state management
+🗃️ Planned upgrade: persist notes in a real-time database (coming soon)
+
+Whether you're organizing your thoughts or just need a digital sticky note board, KeepNote helps you stay productive.
