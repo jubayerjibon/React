@@ -1,0 +1,222 @@
+/* ----------header css--------- */
+.header_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffbe6;
+    padding: 12px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #202124;
+}
+
+.search_div {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 300px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search_div:focus-within {
+    box-shadow: 0 0 0 2px #c5cae9;
+}
+
+.search_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.search_div input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+}
+
+/* ----------footer css --------------- */
+.footer_div {
+    background-color: #f5f5f5;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+    width: 100%;
+}
+
+.footer_div p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer_div a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer_div a:hover {
+    text-decoration: underline;
+}
+
+/* ------------ Note add section css ---------------- */
+.noteInput_div {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fffbe6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.noteInput_div form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.noteInput_div input[type="text"],
+.noteInput_div textarea {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+}
+
+.noteInput_div input::placeholder,
+.noteInput_div textarea::placeholder {
+    color: #999;
+}
+
+.noteInput_div textarea {
+    min-height: 80px;
+}
+
+.noteAdd_button {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #ffca28;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.noteAdd_button:hover {
+    background-color: #f4b400;
+    transform: scale(1.1);
+}
+
+.noteAdd_button svg {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* ------ note showing tile css ------------- */
+.note_container {
+    /* Masonry layout using CSS columns with minimum 4 columns */
+    column-width: 200px;      /* minimum width for each column */
+    column-gap: 40px;         /* space between columns */
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .note_container {
+        column-width: 130px; /* smaller minimum column width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .note_container {
+        column-width: 100px; /* smaller minimum column width on small screens */
+    }
+}
+
+.noteCard_div { 
+    display: inline-block;
+    width: 100%;
+    background-color: #fffde7;
+    border-radius: 12px;
+    padding: 16px 16px 40px 16px;
+    margin: 0 0 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    word-break: break-word;
+    transition: transform 0.2s ease;
+    vertical-align: top; /* important for inline-block masonry */
+}
+
+.noteCard_div:hover {
+    transform: translateY(-4px);
+}
+
+.note_title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.note_text_div p {
+    font-size: 15px;
+    color: #444;
+    margin: 0;
+    line-height: 1.6;
+    white-space: pre-wrap; /* preserve line breaks */
+}
+
+/* Delete button styling */
+.noteDelete_btn { 
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.noteDelete_btn svg {
+    font-size: 20px;
+    color: #d32f2f;
+}
+
+.noteDelete_btn:hover {
+    background-color: rgba(211, 47, 47, 0.1);
+    transform: scale(1.2);
+}
+
+
+
